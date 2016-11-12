@@ -7,10 +7,10 @@ $(document).ready(function(){
             url: 'request.php',
             datatype: 'html',
             data: {
-                q: 'definition'
+                q: $("#word").val()
             },
             success: function(text){
-                alert(text);
+                $("#result").html(text);
             }
         });
     });
